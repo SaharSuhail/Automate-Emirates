@@ -1,0 +1,60 @@
+2019-10-23 01:09:42,948  INFO [main] SearchFlight:45 - Chrome driver is initialized
+2019-10-23 01:09:48,725  INFO [main] SearchFlight:48 - Emirates site is opened
+2019-10-23 01:09:52,927  INFO [main] SearchFlight:51 - Window is maximized
+2019-10-23 01:09:55,674  INFO [main] SearchFlight:54 - Deleted all cookies of browser
+2019-10-23 01:09:55,689  INFO [main] SearchFlight:57 - Pageload wait added
+2019-10-23 01:09:55,698  INFO [main] SearchFlight:60 - Implicit wait added
+2019-10-23 01:09:55,702  INFO [main] SearchFlight:63 - Actions object initialized to select departure / arrival places later
+2019-10-23 01:09:55,705  INFO [main] SearchFlight:66 - Wait added so browser can load properly
+2019-10-23 01:09:55,706  INFO [main] SearchFlight:69 - Random object initialized so we can pick random index later
+2019-10-23 01:09:55,706  INFO [main] SearchFlight:25 - Setup has been Completed
+2019-10-23 01:09:55,713  INFO [main] SearchFlight:31 - LaunchSite has been started
+2019-10-23 01:09:55,741  INFO [main] SearchFlight:33 - LaunchSite has been Completed
+2019-10-23 01:09:55,744  INFO [main] SearchFlight:40 - setDeparture has been started
+2019-10-23 01:09:55,822  INFO [main] SearchFlight:76 - Wait added until departure field is loaded
+2019-10-23 01:09:55,838  INFO [main] SearchFlight:79 - Access Departure WebElement
+2019-10-23 01:09:55,975  INFO [main] SearchFlight:82 - 1st click on Departure field
+2019-10-23 01:09:56,091  INFO [main] SearchFlight:85 - 2nd click on departure field so dropdown can open
+2019-10-23 01:09:56,097  INFO [main] SearchFlight:88 - Wait added so departure dropdown can load properly
+2019-10-23 01:09:56,158  INFO [main] SearchFlight:91 - Wait added until departure field drop down data appears
+2019-10-23 01:09:56,183  INFO [main] SearchFlight:94 - Access Departure field Dropdown
+2019-10-23 01:09:56,217  INFO [main] SearchFlight:98 - Get all the list items in departure field, size is: 31
+2019-10-23 01:09:56,217  INFO [main] SearchFlight:101 - Departure: Size of list items calculated
+2019-10-23 01:09:56,218  INFO [main] SearchFlight:104 - Select a random index from the size i.e: 28
+2019-10-23 01:09:56,502  INFO [main] SearchFlight:107 - Click on random index for Departure Dropdown
+2019-10-23 01:09:56,536  INFO [main] SearchFlight:165 - Departure place field data accessed
+2019-10-23 01:09:56,536  INFO [main] SearchFlight:44 - Departure Place has been stored in WebElement
+2019-10-23 01:09:56,549  INFO [main] SearchFlight:47 - Fetched value of WebElement departure1
+2019-10-23 01:09:56,550  INFO [main] SearchFlight:50 - Assertion checked if there is any value in field
+2019-10-23 01:09:56,554  INFO [main] SearchFlight:57 - setArrival has been started
+2019-10-23 01:09:56,652  INFO [main] SearchFlight:114 - Wait added until arrival field is loaded
+2019-10-23 01:09:56,708  INFO [main] SearchFlight:117 - Access Arrival WebElement
+2019-10-23 01:09:56,708  INFO [main] SearchFlight:120 - Click on Arrival field
+2019-10-23 01:09:56,719  INFO [main] SearchFlight:123 - Wait added so arrival dropdown can load properly
+2019-10-23 01:09:57,428  INFO [main] SearchFlight:126 - Wait added until arrival field drop down data appears
+2019-10-23 01:09:57,455  INFO [main] SearchFlight:129 - Access Arrival field Dropdown
+2019-10-23 01:09:57,460  INFO [main] SearchFlight:132 - Wait added so arrival dropdown can load properly
+2019-10-23 01:09:57,522  INFO [main] SearchFlight:136 - Get all the list items in arrival field, size is: 30
+2019-10-23 01:09:57,523  INFO [main] SearchFlight:139 - Arrival: Size of list items calculated
+2019-10-23 01:09:57,523  INFO [main] SearchFlight:142 - Select a random index from the size i.e: 2
+2019-10-23 01:09:57,689  INFO [main] SearchFlight:145 - Click on random index for Arrival Dropdown
+2019-10-23 01:09:57,799  INFO [main] SearchFlight:172 - Arrival place field data accessed
+2019-10-23 01:09:57,800  INFO [main] SearchFlight:61 - Arrival Place has been stored in WebElement
+2019-10-23 01:09:57,821  INFO [main] SearchFlight:64 - Fetched value of WebElement arrival1
+2019-10-23 01:09:57,821  INFO [main] SearchFlight:67 - Assertion checked if there is any value in field
+2019-10-23 01:09:57,825  INFO [main] SearchFlight:73 - setDepartureDate has been started
+2019-10-23 01:09:57,847  INFO [main] SearchFlight:293 - Calendar object created
+2019-10-23 01:09:57,848  INFO [main] SearchFlight:296 - today's date calculated: 23
+2019-10-23 01:09:57,848  INFO [main] SearchFlight:299 - today's date converted to string: 23
+2019-10-23 01:09:58,938  INFO [main] SearchFlight:77 - Departure Date has been stored in WebElement
+2019-10-23 01:09:58,955  INFO [main] SearchFlight:80 - Fetched value of WebElement departure1
+2019-10-23 01:09:58,956  INFO [main] SearchFlight:83 - Assertion checked if there is any value in field
+2019-10-23 01:09:58,959  INFO [main] SearchFlight:90 - testArrivalDate has been started
+2019-10-23 01:09:58,970  INFO [main] SearchFlight:293 - Calendar object created
+2019-10-23 01:09:58,970  INFO [main] SearchFlight:296 - today's date calculated: 23
+2019-10-23 01:09:58,970  INFO [main] SearchFlight:299 - today's date converted to string: 23
+2019-10-23 01:09:59,604  INFO [main] SearchFlight:94 - Arrival Place has been stored in WebElement
+2019-10-23 01:09:59,614  INFO [main] SearchFlight:97 - Fetched value of WebElement arrival1
+2019-10-23 01:09:59,615  INFO [main] SearchFlight:13 - Taking screenshot of failed case
+2019-10-23 01:10:00,986  INFO [main] SearchFlight:192 - Browser is quit
+2019-10-23 01:10:00,986  INFO [main] SearchFlight:109 - Browser is closed
