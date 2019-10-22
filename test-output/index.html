@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EmiratesAssignment" class="navigator-link">
+              <span class="suite-name border-failed">EmiratesAssignment</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EmiratesAssignment" class="navigator-link ">
+                    <span>C:\Users\adnan\ecl-ws\EmiratesFlightSearch\src\emiratesTests\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EmiratesAssignment" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EmiratesAssignment" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EmiratesAssignment" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EmiratesAssignment" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EmiratesAssignment" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EmiratesAssignment" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EmiratesAssignment" class="hide-methods failed suite-EmiratesAssignment"> (hide)</a> <!-- hide-methods failed suite-EmiratesAssignment -->
+                      <a href="#" panel-name="suite-EmiratesAssignment" class="show-methods failed suite-EmiratesAssignment"> (show)</a> <!-- show-methods failed suite-EmiratesAssignment -->
+                    </span>
+                    <div class="method-list-content failed suite-EmiratesAssignment">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testArrivalDate">testArrivalDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EmiratesAssignment -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EmiratesAssignment" class="hide-methods passed suite-EmiratesAssignment"> (hide)</a> <!-- hide-methods passed suite-EmiratesAssignment -->
+                      <a href="#" panel-name="suite-EmiratesAssignment" class="show-methods passed suite-EmiratesAssignment"> (show)</a> <!-- show-methods passed suite-EmiratesAssignment -->
+                    </span>
+                    <div class="method-list-content passed suite-EmiratesAssignment">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="tearDown">tearDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testArrival">testArrival</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testDeparture">testDeparture</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testDepartureDate">testDepartureDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EmiratesAssignment -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EmiratesAssignment" class="panel EmiratesAssignment">
+          <div class="suite-EmiratesAssignment-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">emiratesTests.SearchFlightsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testArrivalDate">
+                  </a> <!-- testArrivalDate -->
+                  <span class="method-name">testArrivalDate</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at emiratesTests.SearchFlightsTest.testArrivalDate(SearchFlightsTest.java:99)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmiratesAssignment-class-failed -->
+          <div class="suite-EmiratesAssignment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">emiratesTests.SearchFlightsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tearDown">
+                  </a> <!-- tearDown -->
+                  <span class="method-name">tearDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testArrival">
+                  </a> <!-- testArrival -->
+                  <span class="method-name">testArrival</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeparture">
+                  </a> <!-- testDeparture -->
+                  <span class="method-name">testDeparture</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDepartureDate">
+                  </a> <!-- testDepartureDate -->
+                  <span class="method-name">testDepartureDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmiratesAssignment-class-passed -->
+        </div> <!-- panel EmiratesAssignment -->
+        <div panel-name="test-xml-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\adnan\ecl-ws\EmiratesFlightSearch\src\emiratesTests\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EmiratesAssignment&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search suitable Flights&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;emiratesTests.SearchFlightsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search suitable Flights --&gt;
+&lt;/suite&gt; &lt;!-- EmiratesAssignment --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EmiratesAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search suitable Flights (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EmiratesAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EmiratesAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EmiratesAssignment');
+function tableData_EmiratesAssignment() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'setUp')
+data.setCell(0, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(0, 3, 19783);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testArrival')
+data.setCell(1, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(1, 3, 1269);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDepartureDate')
+data.setCell(2, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(2, 3, 1132);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tearDown')
+data.setCell(3, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(3, 3, 834);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeparture')
+data.setCell(4, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(4, 3, 807);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testArrivalDate')
+data.setCell(5, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(5, 3, 657);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'launchSite')
+data.setCell(6, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(6, 3, 30);
+window.suiteTableData['EmiratesAssignment']= { tableData: data, tableDiv: 'times-div-EmiratesAssignment'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-EmiratesAssignment">
+              </div> <!-- times-div-EmiratesAssignment -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EmiratesAssignment</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EmiratesAssignment" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">emiratesTests.SearchFlightsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">19788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeparture</span>
+                <span class="method-start">19820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testArrival</span>
+                <span class="method-start">20630 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDepartureDate</span>
+                <span class="method-start">21901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testArrivalDate</span>
+                <span class="method-start">23035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24230 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

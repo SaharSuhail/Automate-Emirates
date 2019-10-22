@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EmiratesAssignment]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Search suitable Flights(failed)">
+    <classes>
+      <class name="emiratesTests.SearchFlightsTest">
+        <methods>
+          <include name="testArrivalDate"/>
+        </methods>
+      </class> <!-- emiratesTests.SearchFlightsTest -->
+    </classes>
+  </test> <!-- Search suitable Flights(failed) -->
+</suite> <!-- Failed suite [EmiratesAssignment] -->
