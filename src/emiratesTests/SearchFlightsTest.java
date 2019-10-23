@@ -89,7 +89,7 @@ public class SearchFlightsTest extends SearchFlight{
 	  	String textInsideInputField = arrival1.getAttribute("value"); // getting data from WebElement
 	  	getLogger().info("Fetched value of WebElement arrival1");
 	  	
-	    Assert.assertTrue(textInsideInputField.isEmpty()); // Assertion added if there is any data in Arrival, pass the case
+	    Assert.assertTrue(!textInsideInputField.isEmpty()); // Assertion added if there is any data in Arrival, pass the case
 	    getLogger().info("Assertion checked if there is any value in field");
 	  
   }
@@ -122,7 +122,7 @@ public class SearchFlightsTest extends SearchFlight{
 	  
   }
   
-  @Test(priority = 8)
+  @Test(priority = 9)
   public void tearDown() {
 	  
 	  
