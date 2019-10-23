@@ -1,60 +1,192 @@
-2019-10-23 01:09:42,948  INFO [main] SearchFlight:45 - Chrome driver is initialized
-2019-10-23 01:09:48,725  INFO [main] SearchFlight:48 - Emirates site is opened
-2019-10-23 01:09:52,927  INFO [main] SearchFlight:51 - Window is maximized
-2019-10-23 01:09:55,674  INFO [main] SearchFlight:54 - Deleted all cookies of browser
-2019-10-23 01:09:55,689  INFO [main] SearchFlight:57 - Pageload wait added
-2019-10-23 01:09:55,698  INFO [main] SearchFlight:60 - Implicit wait added
-2019-10-23 01:09:55,702  INFO [main] SearchFlight:63 - Actions object initialized to select departure / arrival places later
-2019-10-23 01:09:55,705  INFO [main] SearchFlight:66 - Wait added so browser can load properly
-2019-10-23 01:09:55,706  INFO [main] SearchFlight:69 - Random object initialized so we can pick random index later
-2019-10-23 01:09:55,706  INFO [main] SearchFlight:25 - Setup has been Completed
-2019-10-23 01:09:55,713  INFO [main] SearchFlight:31 - LaunchSite has been started
-2019-10-23 01:09:55,741  INFO [main] SearchFlight:33 - LaunchSite has been Completed
-2019-10-23 01:09:55,744  INFO [main] SearchFlight:40 - setDeparture has been started
-2019-10-23 01:09:55,822  INFO [main] SearchFlight:76 - Wait added until departure field is loaded
-2019-10-23 01:09:55,838  INFO [main] SearchFlight:79 - Access Departure WebElement
-2019-10-23 01:09:55,975  INFO [main] SearchFlight:82 - 1st click on Departure field
-2019-10-23 01:09:56,091  INFO [main] SearchFlight:85 - 2nd click on departure field so dropdown can open
-2019-10-23 01:09:56,097  INFO [main] SearchFlight:88 - Wait added so departure dropdown can load properly
-2019-10-23 01:09:56,158  INFO [main] SearchFlight:91 - Wait added until departure field drop down data appears
-2019-10-23 01:09:56,183  INFO [main] SearchFlight:94 - Access Departure field Dropdown
-2019-10-23 01:09:56,217  INFO [main] SearchFlight:98 - Get all the list items in departure field, size is: 31
-2019-10-23 01:09:56,217  INFO [main] SearchFlight:101 - Departure: Size of list items calculated
-2019-10-23 01:09:56,218  INFO [main] SearchFlight:104 - Select a random index from the size i.e: 28
-2019-10-23 01:09:56,502  INFO [main] SearchFlight:107 - Click on random index for Departure Dropdown
-2019-10-23 01:09:56,536  INFO [main] SearchFlight:165 - Departure place field data accessed
-2019-10-23 01:09:56,536  INFO [main] SearchFlight:44 - Departure Place has been stored in WebElement
-2019-10-23 01:09:56,549  INFO [main] SearchFlight:47 - Fetched value of WebElement departure1
-2019-10-23 01:09:56,550  INFO [main] SearchFlight:50 - Assertion checked if there is any value in field
-2019-10-23 01:09:56,554  INFO [main] SearchFlight:57 - setArrival has been started
-2019-10-23 01:09:56,652  INFO [main] SearchFlight:114 - Wait added until arrival field is loaded
-2019-10-23 01:09:56,708  INFO [main] SearchFlight:117 - Access Arrival WebElement
-2019-10-23 01:09:56,708  INFO [main] SearchFlight:120 - Click on Arrival field
-2019-10-23 01:09:56,719  INFO [main] SearchFlight:123 - Wait added so arrival dropdown can load properly
-2019-10-23 01:09:57,428  INFO [main] SearchFlight:126 - Wait added until arrival field drop down data appears
-2019-10-23 01:09:57,455  INFO [main] SearchFlight:129 - Access Arrival field Dropdown
-2019-10-23 01:09:57,460  INFO [main] SearchFlight:132 - Wait added so arrival dropdown can load properly
-2019-10-23 01:09:57,522  INFO [main] SearchFlight:136 - Get all the list items in arrival field, size is: 30
-2019-10-23 01:09:57,523  INFO [main] SearchFlight:139 - Arrival: Size of list items calculated
-2019-10-23 01:09:57,523  INFO [main] SearchFlight:142 - Select a random index from the size i.e: 2
-2019-10-23 01:09:57,689  INFO [main] SearchFlight:145 - Click on random index for Arrival Dropdown
-2019-10-23 01:09:57,799  INFO [main] SearchFlight:172 - Arrival place field data accessed
-2019-10-23 01:09:57,800  INFO [main] SearchFlight:61 - Arrival Place has been stored in WebElement
-2019-10-23 01:09:57,821  INFO [main] SearchFlight:64 - Fetched value of WebElement arrival1
-2019-10-23 01:09:57,821  INFO [main] SearchFlight:67 - Assertion checked if there is any value in field
-2019-10-23 01:09:57,825  INFO [main] SearchFlight:73 - setDepartureDate has been started
-2019-10-23 01:09:57,847  INFO [main] SearchFlight:293 - Calendar object created
-2019-10-23 01:09:57,848  INFO [main] SearchFlight:296 - today's date calculated: 23
-2019-10-23 01:09:57,848  INFO [main] SearchFlight:299 - today's date converted to string: 23
-2019-10-23 01:09:58,938  INFO [main] SearchFlight:77 - Departure Date has been stored in WebElement
-2019-10-23 01:09:58,955  INFO [main] SearchFlight:80 - Fetched value of WebElement departure1
-2019-10-23 01:09:58,956  INFO [main] SearchFlight:83 - Assertion checked if there is any value in field
-2019-10-23 01:09:58,959  INFO [main] SearchFlight:90 - testArrivalDate has been started
-2019-10-23 01:09:58,970  INFO [main] SearchFlight:293 - Calendar object created
-2019-10-23 01:09:58,970  INFO [main] SearchFlight:296 - today's date calculated: 23
-2019-10-23 01:09:58,970  INFO [main] SearchFlight:299 - today's date converted to string: 23
-2019-10-23 01:09:59,604  INFO [main] SearchFlight:94 - Arrival Place has been stored in WebElement
-2019-10-23 01:09:59,614  INFO [main] SearchFlight:97 - Fetched value of WebElement arrival1
-2019-10-23 01:09:59,615  INFO [main] SearchFlight:13 - Taking screenshot of failed case
-2019-10-23 01:10:00,986  INFO [main] SearchFlight:192 - Browser is quit
-2019-10-23 01:10:00,986  INFO [main] SearchFlight:109 - Browser is closed
+2019-10-23 08:55:08,552  INFO [main] SearchFlight:45 - Chrome driver is initialized
+2019-10-23 08:55:21,848  INFO [main] SearchFlight:48 - Emirates site is opened
+2019-10-23 08:55:27,057  INFO [main] SearchFlight:51 - Window is maximized
+2019-10-23 08:55:36,660  INFO [main] SearchFlight:54 - Deleted all cookies of browser
+2019-10-23 08:55:36,672  INFO [main] SearchFlight:57 - Pageload wait added
+2019-10-23 08:55:36,678  INFO [main] SearchFlight:60 - Implicit wait added
+2019-10-23 08:55:36,971  INFO [main] SearchFlight:63 - Actions object initialized to select departure / arrival places later
+2019-10-23 08:55:36,986  INFO [main] SearchFlight:66 - Wait added so browser can load properly
+2019-10-23 08:55:36,989  INFO [main] SearchFlight:69 - Random object initialized so we can pick random index later
+2019-10-23 08:55:36,992  INFO [main] SearchFlight:18 - Setup has been Completed
+2019-10-23 08:55:37,016  INFO [main] SearchFlight:24 - LaunchSite has been started
+2019-10-23 08:55:37,048  INFO [main] SearchFlight:26 - LaunchSite has been Completed
+2019-10-23 08:55:37,052  INFO [main] SearchFlight:33 - setDeparture has been started
+2019-10-23 08:55:38,494  INFO [main] SearchFlight:76 - Wait added until departure field is loaded
+2019-10-23 08:55:38,515  INFO [main] SearchFlight:79 - Access Departure WebElement
+2019-10-23 08:55:47,659  INFO [main] SearchFlight:82 - 1st click on Departure field
+2019-10-23 08:55:52,866  INFO [main] SearchFlight:85 - 2nd click on departure field so dropdown can open
+2019-10-23 08:55:52,877  INFO [main] SearchFlight:88 - Wait added so departure dropdown can load properly
+2019-10-23 08:55:53,009  INFO [main] SearchFlight:91 - Wait added until departure field drop down data appears
+2019-10-23 08:55:53,033  INFO [main] SearchFlight:94 - Access Departure field Dropdown
+2019-10-23 08:55:53,933  INFO [main] SearchFlight:98 - Get all the list items in departure field, size is: 31
+2019-10-23 08:55:53,933  INFO [main] SearchFlight:101 - Departure: Size of list items calculated
+2019-10-23 08:55:53,934  INFO [main] SearchFlight:104 - Select a random index from the size i.e: 27
+2019-10-23 08:56:00,042  INFO [main] SearchFlight:107 - Click on random index for Departure Dropdown
+2019-10-23 08:56:00,077  INFO [main] SearchFlight:245 - Departure place field data accessed
+2019-10-23 08:56:00,077  INFO [main] SearchFlight:37 - Departure Place has been stored in WebElement
+2019-10-23 08:56:00,102  INFO [main] SearchFlight:40 - Fetched value of WebElement departure1
+2019-10-23 08:56:00,102  INFO [main] SearchFlight:43 - Assertion checked if there is any value in field
+2019-10-23 08:56:00,107  INFO [main] SearchFlight:50 - setArrival has been started
+2019-10-23 08:56:00,153  INFO [main] SearchFlight:114 - Wait added until arrival field is loaded
+2019-10-23 08:56:00,176  INFO [main] SearchFlight:117 - Access Arrival WebElement
+2019-10-23 08:56:00,176  INFO [main] SearchFlight:120 - Click on Arrival field
+2019-10-23 08:56:00,183  INFO [main] SearchFlight:123 - Wait added so arrival dropdown can load properly
+2019-10-23 08:56:01,262  INFO [main] SearchFlight:126 - Wait added until arrival field drop down data appears
+2019-10-23 08:56:01,289  INFO [main] SearchFlight:129 - Access Arrival field Dropdown
+2019-10-23 08:56:01,295  INFO [main] SearchFlight:132 - Wait added so arrival dropdown can load properly
+2019-10-23 08:56:01,321  INFO [main] SearchFlight:136 - Get all the list items in arrival field, size is: 30
+2019-10-23 08:56:01,322  INFO [main] SearchFlight:139 - Arrival: Size of list items calculated
+2019-10-23 08:56:01,322  INFO [main] SearchFlight:142 - Select a random index from the size i.e: 3
+2019-10-23 08:56:06,601  INFO [main] SearchFlight:145 - Click on random index for Arrival Dropdown
+2019-10-23 08:56:06,672  INFO [main] SearchFlight:252 - Arrival place field data accessed
+2019-10-23 08:56:06,673  INFO [main] SearchFlight:54 - Arrival Place has been stored in WebElement
+2019-10-23 08:56:06,806  INFO [main] SearchFlight:57 - Fetched value of WebElement arrival1
+2019-10-23 08:56:06,806  INFO [main] SearchFlight:60 - Assertion checked if there is any value in field
+2019-10-23 08:56:06,809  INFO [main] SearchFlight:66 - setDepartureDate has been started
+2019-10-23 08:56:06,814  INFO [main] SearchFlight:151 - Wait added in returning date
+2019-10-23 08:56:06,814  INFO [main] SearchFlight:282 - Calendar object created
+2019-10-23 08:56:06,815  INFO [main] SearchFlight:285 - today's date calculated: 23
+2019-10-23 08:56:06,815  INFO [main] SearchFlight:154 - CurrentDay is called: 23
+2019-10-23 08:56:06,845  INFO [main] SearchFlight:158 - Date Picker is clicked
+2019-10-23 08:56:06,887  INFO [main] SearchFlight:161 - Stored data in WebElement
+2019-10-23 08:56:06,933  INFO [main] SearchFlight:164 - # of Coloumns are calculated
+2019-10-23 08:56:07,267  INFO [main] SearchFlight:167 - random date is picked moving forward today
+2019-10-23 08:56:07,268  INFO [main] SearchFlight:170 - Random value converted from double to integer
+2019-10-23 08:56:07,268  INFO [main] SearchFlight:173 - Random value converted from int to String
+2019-10-23 08:56:07,268  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,396  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,396  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,430  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,434  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,466  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,466  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,493  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,493  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,530  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,530  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,557  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,557  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,586  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,586  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,615  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,615  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,642  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,642  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,673  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,674  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,707  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,707  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,734  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,734  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,771  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,771  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,804  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,804  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,830  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,830  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,858  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,859  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,890  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,890  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,922  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,923  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,947  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,947  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:08,980  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:08,980  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,007  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,007  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,060  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,061  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,124  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,124  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,168  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,169  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,210  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,210  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:09,244  INFO [main] SearchFlight:182 - A random no is selected: 26
+2019-10-23 08:56:09,244  INFO [main] SearchFlight:177 - Loop started to go through cells
+2019-10-23 08:56:10,005  INFO [main] SearchFlight:70 - Departure Date has been stored in WebElement
+2019-10-23 08:56:10,029  INFO [main] SearchFlight:73 - Fetched value of WebElement departure1
+2019-10-23 08:56:10,029  INFO [main] SearchFlight:76 - Assertion checked if there is any value in field
+2019-10-23 08:56:10,032  INFO [main] SearchFlight:83 - testArrivalDate has been started
+2019-10-23 08:56:10,048  INFO [main] SearchFlight:191 - Wait added in returning date
+2019-10-23 08:56:10,100  INFO [main] SearchFlight:194 - Date Picker is clicked
+2019-10-23 08:56:10,153  INFO [main] SearchFlight:197 - Stored data in WebElement
+2019-10-23 08:56:10,181  INFO [main] SearchFlight:201 - # of Coloumns are calculated
+2019-10-23 08:56:10,181  INFO [main] SearchFlight:204 - random date is picked moving forward today
+2019-10-23 08:56:10,181  INFO [main] SearchFlight:207 - Random value converted from double to integer
+2019-10-23 08:56:10,181  INFO [main] SearchFlight:210 - Random value converted from int to String
+2019-10-23 08:56:10,182  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,198  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,198  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,216  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,217  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,234  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,235  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,251  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,252  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,264  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,264  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,275  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,275  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,287  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,287  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,298  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,299  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,315  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,316  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,331  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,331  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,345  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,346  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,359  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,359  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,374  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,375  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,388  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,388  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,404  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,405  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,417  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,417  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,430  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,430  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,446  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,446  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,460  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,461  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,478  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,478  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,496  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,496  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,513  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,514  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,533  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,533  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,550  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,550  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,567  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,567  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,586  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,586  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,604  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,605  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,634  INFO [main] SearchFlight:220 - A random no is selected: 28
+2019-10-23 08:56:10,635  INFO [main] SearchFlight:214 - Loop started to go through cells
+2019-10-23 08:56:10,864  INFO [main] SearchFlight:87 - Arrival Place has been stored in WebElement
+2019-10-23 08:56:10,885  INFO [main] SearchFlight:90 - Fetched value of WebElement arrival1
+2019-10-23 08:56:10,887  INFO [main] SearchFlight:13 - Taking screenshot of failed case
+2019-10-23 08:56:14,058  INFO [main] SearchFlight:293 - screenshot has been captured
+2019-10-23 08:56:15,898  INFO [main] SearchFlight:298 - Store screenshot in destination path
+2019-10-23 08:56:16,187  INFO [main] SearchFlight:100 - testClassType has been started
+2019-10-23 08:56:16,357  INFO [main] SearchFlight:228 - Class has been selected
+2019-10-23 08:56:16,526  INFO [main] SearchFlight:231 - Business class is selected from drop down
+2019-10-23 08:56:16,546  INFO [main] SearchFlight:104 - Class Type has been stored in WebElement
+2019-10-23 08:56:16,563  INFO [main] SearchFlight:107 - Fetched value of WebElement classType
+2019-10-23 08:56:16,563  INFO [main] SearchFlight:110 - Assertion checked if selectted value is Business Class
+2019-10-23 08:56:19,849  INFO [main] SearchFlight:276 - Browser is quit
+2019-10-23 08:56:19,851  INFO [main] SearchFlight:130 - Browser is closed
+2019-10-23 08:56:19,868  INFO [main] SearchFlight:117 - testSearch has been started
+2019-10-23 08:56:21,782  INFO [main] SearchFlight:13 - Taking screenshot of failed case
+2019-10-23 08:56:21,783  INFO [main] SearchFlight:13 - Taking screenshot of failed case

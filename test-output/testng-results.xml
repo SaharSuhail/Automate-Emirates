@@ -1,33 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-23T01:09:35 PKT" name="EmiratesAssignment" finished-at="2019-10-23T01:10:00 PKT" duration-ms="25099">
+  <suite started-at="2019-10-23T08:34:17 PKT" name="EmiratesAssignment" finished-at="2019-10-23T08:34:51 PKT" duration-ms="34421">
     <groups>
     </groups>
-    <test started-at="2019-10-23T01:09:35 PKT" name="Search suitable Flights" finished-at="2019-10-23T01:10:00 PKT" duration-ms="25099">
+    <test started-at="2019-10-23T08:34:17 PKT" name="Search suitable Flights" finished-at="2019-10-23T08:34:51 PKT" duration-ms="34421">
       <class name="emiratesTests.SearchFlightsTest">
-        <test-method signature="setUp()[pri:1, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:35 PKT" name="setUp" finished-at="2019-10-23T01:09:55 PKT" duration-ms="19783" status="PASS">
+        <test-method signature="setUp()[pri:1, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:17 PKT" name="setUp" finished-at="2019-10-23T08:34:44 PKT" duration-ms="27375" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [Emirates flights – Book a flight, browse our flight offers and explore the Emirates Experience]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [Emirates flights – Book a flight, browse our flight offers and explore the Emirates Experience]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at emiratesTests.SearchFlightsTest.setUp(SearchFlightsTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchSite()[pri:2, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:55 PKT" name="launchSite" finished-at="2019-10-23T01:09:55 PKT" duration-ms="30" status="PASS">
+        <test-method signature="launchSite()[pri:2, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:46 PKT" name="launchSite" finished-at="2019-10-23T08:34:46 PKT" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method signature="testDeparture()[pri:3, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:55 PKT" name="testDeparture" finished-at="2019-10-23T01:09:56 PKT" duration-ms="807" status="PASS">
+        <test-method signature="testDeparture()[pri:3, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:46 PKT" name="testDeparture" finished-at="2019-10-23T08:34:47 PKT" duration-ms="1199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeparture -->
-        <test-method signature="testArrival()[pri:4, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:56 PKT" name="testArrival" finished-at="2019-10-23T01:09:57 PKT" duration-ms="1269" status="PASS">
+        <test-method signature="testArrival()[pri:4, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:47 PKT" name="testArrival" finished-at="2019-10-23T08:34:48 PKT" duration-ms="1029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArrival -->
-        <test-method signature="testDepartureDate()[pri:5, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:57 PKT" name="testDepartureDate" finished-at="2019-10-23T01:09:58 PKT" duration-ms="1132" status="PASS">
+        <test-method signature="testDepartureDate()[pri:5, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:48 PKT" name="testDepartureDate" finished-at="2019-10-23T08:34:49 PKT" duration-ms="972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDepartureDate -->
-        <test-method signature="testArrivalDate()[pri:6, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:09:58 PKT" name="testArrivalDate" finished-at="2019-10-23T01:09:59 PKT" duration-ms="657" status="FAIL">
+        <test-method signature="testArrivalDate()[pri:6, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:49 PKT" name="testArrivalDate" finished-at="2019-10-23T08:34:50 PKT" duration-ms="858" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect to find [true] but found [false]]]>
@@ -38,7 +80,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:969)
 at org.testng.Assert.assertTrue(Assert.java:43)
 at org.testng.Assert.assertTrue(Assert.java:53)
-at emiratesTests.SearchFlightsTest.testArrivalDate(SearchFlightsTest.java:99)
+at emiratesTests.SearchFlightsTest.testArrivalDate(SearchFlightsTest.java:93)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,7 +115,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArrivalDate -->
-        <test-method signature="tearDown()[pri:7, instance:emiratesTests.SearchFlightsTest@76ed1b7c]" started-at="2019-10-23T01:10:00 PKT" name="tearDown" finished-at="2019-10-23T01:10:00 PKT" duration-ms="834" status="PASS">
+        <test-method signature="testClassType()[pri:7, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:50 PKT" name="testClassType" finished-at="2019-10-23T08:34:50 PKT" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassType -->
+        <test-method signature="tearDown()[pri:8, instance:emiratesTests.SearchFlightsTest@7c1e2a9e]" started-at="2019-10-23T08:34:50 PKT" name="tearDown" finished-at="2019-10-23T08:34:51 PKT" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

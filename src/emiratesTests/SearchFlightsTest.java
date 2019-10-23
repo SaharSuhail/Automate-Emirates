@@ -10,13 +10,6 @@ import org.testng.Assert;
 
 @Listeners(CustomListener.class)
 public class SearchFlightsTest extends SearchFlight{
-	
-	//	int departure = 0; // to create random departure date
-	//	int arrival = 0; 	// to create random arrival date
-	//	Random r = new Random();
-	//	String textInsideInputField;
-	//	WebElement departure1;
-	//	WebElement arrival1;
   
  @Test(priority = 1)
   public void setUp() throws InterruptedException {
@@ -102,11 +95,39 @@ public class SearchFlightsTest extends SearchFlight{
   }
   
   @Test(priority = 7)
+  public void testClassType() {
+	  	
+	  	getLogger().info("testClassType has been started");
+	  	selectClassType();
+	  	
+	  	WebElement classType = getClassType(); // get class type after successful update- returns a WebElement
+	  	getLogger().info("Class Type has been stored in WebElement");
+	  	
+	  	String textInsideInputField = classType.getAttribute("value"); // getting data from WebElement
+	  	getLogger().info("Fetched value of WebElement classType");
+	  	
+	    Assert.assertEquals(textInsideInputField, "Business Class"); // Assertion added if selected class i Business Type
+	    getLogger().info("Assertion checked if selectted value is Business Class");
+	  	
+  }
+  
+  @Test(priority =8 )
+  public void testSearch(){
+	  
+	  	getLogger().info("testSearch has been started");
+	  	clickSearch();
+	  
+	  	Assert.assertEquals(driver.getTitle(), "	Search flights | Book a flight | Emirates"); // Assertion added in title of search result page
+		getLogger().info("Search has been completed");
+	  
+  }
+  
+  @Test(priority = 8)
   public void tearDown() {
 	  
 	  
-	  closeBrowser(); //This is will close browser , called here from base class
-	  getLogger().info("Browser is closed");
+	  	closeBrowser(); //This is will close browser , called here from base class
+	  	getLogger().info("Browser is closed");
   }
   
  

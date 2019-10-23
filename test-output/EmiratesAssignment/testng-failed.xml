@@ -5,6 +5,7 @@
     <classes>
       <class name="emiratesTests.SearchFlightsTest">
         <methods>
+          <include name="setUp"/>
           <include name="testArrivalDate"/>
         </methods>
       </class> <!-- emiratesTests.SearchFlightsTest -->

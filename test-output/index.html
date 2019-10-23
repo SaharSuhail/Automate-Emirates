@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-EmiratesAssignment" class="show-methods failed suite-EmiratesAssignment"> (show)</a> <!-- show-methods failed suite-EmiratesAssignment -->
                     </span>
                     <div class="method-list-content failed suite-EmiratesAssignment">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testArrivalDate">testArrivalDate</a> <!-- method navigator-link -->
@@ -121,17 +126,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="tearDown">tearDown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testArrival">testArrival</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmiratesAssignment" title="emiratesTests.SearchFlightsTest" class="method navigator-link" hash-for-method="testClassType">testClassType</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,11 +169,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [Emirates flights – Book a flight, browse our flight offers and explore the Emirates Experience]
+	at emiratesTests.SearchFlightsTest.setUp(SearchFlightsTest.java:19)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testArrivalDate">
                   </a> <!-- testArrivalDate -->
                   <span class="method-name">testArrivalDate</span>
                   <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
-	at emiratesTests.SearchFlightsTest.testArrivalDate(SearchFlightsTest.java:99)
+	at emiratesTests.SearchFlightsTest.testArrivalDate(SearchFlightsTest.java:93)
 	at java.base/java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -191,13 +208,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="setUp">
-                  </a> <!-- setUp -->
-                  <span class="method-name">setUp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="tearDown">
                   </a> <!-- tearDown -->
                   <span class="method-name">tearDown</span>
@@ -208,6 +218,13 @@
                   <a name="testArrival">
                   </a> <!-- testArrival -->
                   <span class="method-name">testArrival</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClassType">
+                  </a> <!-- testClassType -->
+                  <span class="method-name">testClassType</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -278,40 +295,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'setUp')
 data.setCell(0, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(0, 3, 19783);
+data.setCell(0, 3, 27375);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testArrival')
+data.setCell(1, 1, 'testDeparture')
 data.setCell(1, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(1, 3, 1269);
+data.setCell(1, 3, 1199);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDepartureDate')
+data.setCell(2, 1, 'testArrival')
 data.setCell(2, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(2, 3, 1132);
+data.setCell(2, 3, 1029);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tearDown')
+data.setCell(3, 1, 'testDepartureDate')
 data.setCell(3, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(3, 3, 834);
+data.setCell(3, 3, 972);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testDeparture')
+data.setCell(4, 1, 'testArrivalDate')
 data.setCell(4, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(4, 3, 807);
+data.setCell(4, 3, 858);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testArrivalDate')
+data.setCell(5, 1, 'tearDown')
 data.setCell(5, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(5, 3, 657);
+data.setCell(5, 3, 829);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'launchSite')
+data.setCell(6, 1, 'testClassType')
 data.setCell(6, 2, 'emiratesTests.SearchFlightsTest')
-data.setCell(6, 3, 30);
+data.setCell(6, 3, 261);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'launchSite')
+data.setCell(7, 2, 'emiratesTests.SearchFlightsTest')
+data.setCell(7, 3, 20);
 window.suiteTableData['EmiratesAssignment']= { tableData: data, tableDiv: 'times-div-EmiratesAssignment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-EmiratesAssignment">
               </div> <!-- times-div-EmiratesAssignment -->
             </div> <!-- times-div -->
@@ -339,34 +360,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">emiratesTests.SearchFlightsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">launchSite</span>
-                <span class="method-start">19788 ms</span>
+                <span class="method-start">28723 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeparture</span>
-                <span class="method-start">19820 ms</span>
+                <span class="method-start">28743 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testArrival</span>
-                <span class="method-start">20630 ms</span>
+                <span class="method-start">29944 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDepartureDate</span>
-                <span class="method-start">21901 ms</span>
+                <span class="method-start">30977 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testArrivalDate</span>
-                <span class="method-start">23035 ms</span>
+                <span class="method-start">31950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClassType</span>
+                <span class="method-start">33285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24230 ms</span>
+                <span class="method-start">33546 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

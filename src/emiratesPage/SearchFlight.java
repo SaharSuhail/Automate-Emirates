@@ -147,16 +147,96 @@ public class SearchFlight {
 	
 	public void selectDepartureDate() {
 		
-		datePickerTest();
-	
-		
+	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	     getLogger().info("Wait added in returning date");
+	      
+	     today = getCurrentDay();	//Get Today's number
+		 getLogger().info("CurrentDay is called: "+today);
+
+	      
+	      driver.findElement(By.xpath("//input[@id='search-flight-date-picker--depart']"));	//Click and open the datepickers
+		  getLogger().info("Date Picker is clicked");
+		     
+	      WebElement dateWidgetFrom = driver.findElement(By.xpath("//eol-calendar[@title='Please choose your departure date']")); 	//This is from date picker table
+		  getLogger().info("Stored data in WebElement");
+
+	      List<WebElement> columns = dateWidgetFrom.findElements(By.tagName("td"));	//This are the columns of the from date picker table
+		  getLogger().info("# of Coloumns are calculated");
+
+	      depDate = Math.floor((Math.random()*((30-today)+1))+today); // A random no is calculated in month after the today's date
+		  getLogger().info("random date is picked moving forward today");
+
+	      int x = (int) depDate.doubleValue();
+		  getLogger().info("Random value converted from double to integer");
+
+	      String s = Integer.toString(x);
+		  getLogger().info("Random value converted from int to String");
+
+	      for (WebElement cell: columns) {
+	         
+	    	  getLogger().info("Loop started to go through cells");
+	          if (cell.getText().equals(s)) {
+	              cell.click();
+	              break;
+	          }
+		      getLogger().info("A random no is selected: "+s);
+	      }
+	      System.out.println(depDate+"depDate");
 	}
 	
 	public void selectArrivalDate() {
 		
 	
-		returningdateTest();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		getLogger().info("Wait added in returning date");
+
+	     driver.findElement(By.xpath("//input[@id='search-flight-date-picker--return']"));	//Click and open the datepickers
+	     getLogger().info("Date Picker is clicked");
+	      
+	     WebElement dateWidgetFrom = driver.findElement(By.xpath("//eol-calendar[@title='Please choose your departure date']")); //This is from date picker table
+	     getLogger().info("Stored data in WebElement");
+	      
+	     //These are the columns of the from date picker table
+	     List<WebElement> columns = dateWidgetFrom.findElements(By.tagName("td"));
+	     getLogger().info("# of Coloumns are calculated");
+	      
+	     Double arrDate = Math.floor((Math.random()*((30-depDate)+1))+depDate); // a random no is calculated in month after the departure date
+	     getLogger().info("random date is picked moving forward today");
+	      
+	     int x = (int) arrDate.doubleValue(); // Random value converted from double to integer
+	     getLogger().info("Random value converted from double to integer");
+	      
+	     String s = Integer.toString(x); // Random value converted from int to String
+	     getLogger().info("Random value converted from int to String");
+	      
+	     for (WebElement cell: columns) { 	// loop to go through the coloumns cell by cell
+	    	  
+	    	getLogger().info("Loop started to go through cells");
+	        if (cell.getText().equals(s)) // check when random no finds in cell
+	        {
+	        	cell.click();
+	            break;
+	        }
+	        getLogger().info("A random no is selected: "+s);
+	      	}
 		
+	}
+	
+	public void selectClassType()
+	{
+		driver.findElement(By.id("search-flight-class")).click();	//Click and open the datepickers
+	    getLogger().info("Class has been selected");
+	    
+	    driver.findElement(By.xpath("//a[@data-dropdown-display='Business Class']")).click();
+	    getLogger().info("Business class is selected from drop down");
+	
+	}
+	
+	public void clickSearch()
+	{
+		driver.findElement(By.xpath("//button//span[text()=\"Search flights\"]")).click();
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+
 	}
 	
 	public WebElement getDeparturePlace() // get data in driver for Departure Place once selected
@@ -185,72 +265,16 @@ public class SearchFlight {
 		return arrival;
 	}
 	
+	public WebElement getClassType()
+	{
+		return driver.findElement(By.id("search-flight-class"));
+	}
 	
 	public static void closeBrowser() {		// browser will be closed here
 		    
 		driver.quit();
 		getLogger().info("Browser is quit");
 	  }
-	
-	private static void returningdateTest() {
-	
-		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-	      today = getCurrentDay();	//Get Today's number
-	      System.out.println("Today's number: " + today + "\n");
-
-	      driver.findElement(By.xpath("//input[@id='search-flight-date-picker--return']"));	//Click and open the datepickers
-	      
-	      WebElement dateWidgetFrom = driver.findElement(By.xpath("//eol-calendar[@title='Please choose your departure date']")); //This is from date picker table
-
-	      //This are the columns of the from date picker table
-	      List<WebElement> columns = dateWidgetFrom.findElements(By.tagName("td"));
-
-	      Double arrDate = Math.floor((Math.random()*((30-depDate)+1))+depDate);
-	      int x = (int) arrDate.doubleValue();
-	      String s = Integer.toString(x);
-
-	      for (WebElement cell: columns) {
-	    	  
-	          if (cell.getText().equals(s)) {
-	              cell.click();
-	              break;
-	          }
-	      }
-	      System.out.println(arrDate+"ArrDate");
-	}
-
-	public static void datePickerTest() {
-	      //Declare a implicit wait for synchronisation
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-	      //Get Today's number
-	      today = getCurrentDay();
-	      System.out.println("Today's number: " + today + "\n");
-
-	      //Click and open the datepickers
-	      driver.findElement(By.xpath("//input[@id='search-flight-date-picker--depart']"));
-	      //This is from date picker table
-	      WebElement dateWidgetFrom = driver.findElement(By.xpath("//eol-calendar[@title='Please choose your departure date']"));
-
-	      //This are the columns of the from date picker table
-	      List<WebElement> columns = dateWidgetFrom.findElements(By.tagName("td"));
-
-	     
-	      depDate = Math.floor((Math.random()*((30-today)+1))+today);
-	      int x = (int) depDate.doubleValue();
-	      String s = Integer.toString(x);
-
-	      for (WebElement cell: columns) {
-	         
-	          if (cell.getText().equals(s)) {
-	              cell.click();
-	              break;
-	          }
-	      }
-	      System.out.println(depDate+"depDate");
-
-	}
 
 	 private static int getCurrentDay (){
 		 
@@ -260,18 +284,19 @@ public class SearchFlight {
 	      int todayInt = calendar.get(Calendar.DAY_OF_MONTH);	//Get Current Day as a number
 	      getLogger().info("today's date calculated: "+todayInt);
 
-	      String todayStr = Integer.toString(todayInt);	//Integer to String Conversion
-	      getLogger().info("today's date converted to string: "+todayStr);
-
 	      return todayInt;
 	  }
 	 
 	 public void failed(String testMethodName) {
 		 
-		 File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // taking screenshot and storing in output file
+	     getLogger().info("screenshot has been captured"); 
+
 		 try {
 		 
-			 FileUtils.copyFile(sourceFile, new File("C:\\Users\\adnan\\ecl-ws\\EmiratesFlightSearch\\ScreenshotsOfFailedCases\\"+testMethodName+".jpg"));
+			 FileUtils.copyFile(sourceFile, new File("C:\\Users\\adnan\\ecl-ws\\EmiratesFlightSearch\\ScreenshotsOfFailedCases\\"+testMethodName+".jpg"));	// path defined where to store file, with its test method name
+		     getLogger().info("Store screenshot in destination path");
+
 		 }
 		 catch (IOException e){
 			 
@@ -279,11 +304,13 @@ public class SearchFlight {
 		 }
 	 }
 
-	 public static Logger getLogger() {
+	 public static Logger getLogger() //getter for logger to access in other classes
+	 {
 		return logger;
-	}
+	 }
 
-	 public static void setLogger(Logger logger) {
+	 public static void setLogger(Logger logger) // setter of logger
+	 {
 		SearchFlight.logger = logger;
-	}
+	 }
 }
